@@ -1,0 +1,25 @@
+###Prueba servidor activo
+GET http://localhost:8081/despedida
+
+###Crear tweet, la coma en el ultimo atributo del JSON resultar como error
+POST http://localhost:8081/tweet
+Content-Type: application/json
+
+{
+  "user_id": 4,
+  "text": "Un tweet nuevo del usuario 4"
+}
+
+### Obtener timeline
+GET http://localhost:8081/timeline/3
+Content-Type: application/json
+
+###Seguir persona, la coma en el ultimo atributo del JSON resultar como error
+
+POST http://localhost:8081/seguir
+Content-Type: application/json
+
+{
+  "user_id": 2,
+  "user_id_2": 1
+}
